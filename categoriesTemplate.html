@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="eng">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="description" content="Xword Web App">
+	    <meta name="author" content="Sabastian Mugazambi and Freddie ">
+	    <meta name="google-site-verification" content="VXBFrAgGFBs-bCAu1LoUQJNhki7uGp5CvT3XTVpInt4" />
+	    <link rel="icon" href="media/logo.png">
+	    <!--Title-->
+	    <title>Xword - Categories</title>
+	    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+	    <!-- Custom styles for this template -->
+	    <link href="index2.css" rel="stylesheet">
+	</head>
+
+<!-- _____________________________________________________________________________-->
+	<body>
+		<div class="caption">
+			<!--Main header section of the page-->
+				<div id="mainLogo">
+					<a href="index.html"><img id="top_logo" class="top_logo" src="media/logocopy.png"/></a>
+						<div id = "searcher">
+						    <form action="index.py" method="get">
+								<p><input size="100" type="text" name="search_field" placeholder="Enter a word to find other associated words"/></p>
+								<p><input type="submit" value="New Search" /> <input type="submit" name="about" value="About"/></p>
+							</form>
+			<h1 name="searched_field" id="searched_word">{search_field}</h1>
+						</div>
+				</div>
+		<form action="index.py" method="get">
+			<input size="100" type="hidden" name="search_field" id="Search_field" value=""/>
+				<script>
+				 	{keep_js}
+				</script>
+					<section class="dynamic_content">
+						<div id="dynamic_container">
+							<div id="catego_block">
+				  				<div class="categos">
+				  					<input id="DEFINITION" type="checkbox" name="DEFINITION" />
+				  					<label for="DEFINITION">DEFINITION</label>
+				  				</div>
+				  				<div class="categos">
+				  					<input id="NOUNS" type="checkbox" name="NOUNS" />
+				  					<label for="NOUNS">NOUNS</label>
+				  				</div>
+				  				<div class="categos">
+				  					<input id="VERBS" type="checkbox" name="VERBS" />
+				  					<label for="VERBS">VERBS</label>
+				  				</div>
+				  				<div class="categos">
+				  					<input id="ADVERBS" type="checkbox" name="ADVERBS" />
+				  					<label for="ADVERBS">ADVERBS</label>
+				  				</div>
+				  				<div class="categos">
+				  					<input id="ADJECTIVES" type="checkbox" name="ADJECTIVES" />
+				  					<label for="ADJECTIVES">ADJECTIVES</label>
+				  				</div>
+				  				<div class="categos">
+				  					<input id="ALL" type="checkbox" name="ALL" />
+				  					<label for="ALL">ALL</label>
+				  				</div>
+				  			</div>
+							<div id="filter_block" style="display;table-cell">
+								<div id="filter_image2">
+									<img  src="media/filter_data.png"/>
+								</div>
+								<div id="filtering2">
+				        			<p>How many letters in the word?</p>
+									<p><input size="50" type="text" id="lf" name="length_field" placeholder="Enter a number"/></p>
+				        			<h1>OR</h1>
+				        			<p>Fill in the letters you know and replace those you do not know with _</p>
+				        			<p><input size="50" id="lf2" type="text" name="letters_field" placeholder="e.g  o_a_g_"/></p>
+								<script>
+									{grey_out_box}
+								</script>
+					        	</div>
+				        	</div>
+				        	<p><input onclick="keep()" class="button" id="cat_submit" type="submit" value="Show me words" /></p>
+				        </div>
+						</section>
+					</form>	
+
+		</div>
+	</body>
+
+<!-- _____________________________________________________________________________-->
+
+	<footer>
+	</footer>
+</html>

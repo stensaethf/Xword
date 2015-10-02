@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="eng">
+	<head>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="description" content="Xword Web App">
+	    <meta name="author" content="Sabastian Mugazambi and Freddie ">
+	    <meta name="google-site-verification" content="VXBFrAgGFBs-bCAu1LoUQJNhki7uGp5CvT3XTVpInt4" />
+	    <link rel="icon" href="media/logo.png">
+	    <title>Xword - Results</title>
+	    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+	    <!-- Custom styles for this template -->
+	    <link href="index2.css" rel="stylesheet">
+	</head>
+
+<!-- _____________________________________________________________________________-->
+	<body>
+		<div class="caption">
+			<!--Main header section of the page-->
+				<div id="mainLogo">
+
+					<div id="r_logo">
+						<a id="ctr" href="index.html"><img class="top_logo" src="media/logocopy.png"/></a>
+					</div>
+
+					<div id = "searcher">
+					    <form action="index.py" method="get">
+		        			<p><input size="100" type="text" name="search_field" placeholder="Enter a word to find other associated words"/></p>
+		        			<p><input type="submit" value="New Search" /> <input type="submit" name="about" value="About"/></p>
+						</form>
+						<h1 name="searched_field" id="searched_word">{search_field}</h1>
+					</div>
+
+				</div>
+				<section class="dynamic_content">
+				<div id="dynamic_container2">
+					<div id="catego_block">
+					{Definition}
+					{Nouns}
+					{Verbs}
+					{Adverbs}
+					{Adjectives}
+				 	</div>
+					<div id="filter_block" style="display;table-cell">
+								<img id="filter_image2" src="media/filter_data.png"/>
+						<div id="filtering2">
+						    <form action="index.py" method="get">
+								<input size="100" type="hidden" name="search_field" id="Search_field" value=""/>
+								<input size="100" type="hidden" name="DEFINITION" id="Category5" value=""/>
+								<input size="100" type="hidden" name="ADJECTIVES" id="Category4" value=""/>
+								<input size="100" type="hidden" name="NOUNS" id="Category1" value=""/>
+								<input size="100" type="hidden" name="VERBS" id="Category2" value=""/>
+								<input size="100" type="hidden" name="ADVERBS" id="Category3" value=""/>
+								<script>
+									{keep_js}
+									{catkeep_js}
+								</script>
+			        			<p>How many letters in the word?</p>
+			        			<p><input size="50" id="lf" type="text" name="length_field" placeholder="Enter a number"/></p>
+			        			<h1>OR</h1>
+			        			<p>Fill letters you know and replace unknown with _</p>
+			        			<p><input size="50" id="lf2" type="text" name="letters_field" placeholder="e.g  o_a_g_"/></p>
+			        			<p><input onclick="keep();forward();" type="submit" value="Filter" /></p>
+								<script>
+									{grey_out_box}
+								</script>
+							</form>
+						</div>
+				    </div>
+				 </div>
+				</section>
+			</div>
+	</body>
+
+<!-- _____________________________________________________________________________-->
+	<footer>
+	</footer>
+</html>

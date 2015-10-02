@@ -1,0 +1,235 @@
+/* Styling for the Xword pages
+--------------------------------------------*/
+
+/* Xword by Sabastian and Freddie 
+
+--------------------------------------------*/
+
+
+body{
+	color: #5a5a5a;
+	padding: 0;
+	background-image: url(media/flag3.jpg);
+	background-repeat: repeat-y;
+	background-size: 100%;
+	background-color: #2e3141;
+	overflow-y: scroll;
+	/*background-position: relative;*/
+	height: 100%;
+	background-attachment: fixed;
+	min-width: 730px;
+}
+
+.caption{
+	background-color: #2e3141; 
+	margin:auto;
+	color: #fff;    
+	width: 80%;  
+	/*height: 100%; */
+	letter-spacing: 0.125em;
+	font-family: 'OpenSans',Helvetica,sans-serif;
+	z-index: 10;
+	opacity:0.8;
+	padding: 20px;
+}
+
+#mainLogo{
+	width:100%;
+	min-height:200px;
+	overflow:hidden;
+	text-align: center;
+}
+
+#r_logo{
+	/*float:left;*/
+	display: inline-block;
+}
+
+#searcher {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#mainLogo{
+	width:100%;
+	height:auto;
+	max-width: 1011px;
+	overflow-x: scroll;
+}
+
+#searched_word{
+	font-weight: bold;
+	font-size: 50px;
+
+}
+
+.dynamic_content {
+	width:100%;
+	height:auto;
+}
+
+.dynamicDiv{
+	width: 80%;
+	max-height:200px;
+	overflow-y:scroll;
+	border:5px solid black;
+	margin-top:10px;
+	margin-right:auto;
+	margin-left: auto;
+}
+#filter_image{
+	display: inline-block;
+}
+
+#filter_image{
+	/*border:1px dashed black;*/
+	margin: auto;
+}
+
+#filter_image2{
+	/*border:1px dashed black;*/
+	margin: auto;
+	float:left;
+}
+#filtering{
+	text-align: center;
+	min-height: 256px;
+
+}
+
+#filtering2{
+	text-align:center;
+	min-height: 256px;
+	margin:auto;
+	padding-top: 20px;
+}
+
+.categos{ 
+	width: auto; 
+	padding: 20px;
+	background-color: #2e3141; 
+	margin-top: 20px;
+	display: inline-block;
+
+	/* outer shadows  (note the rgba is red, green, blue, alpha) */
+	-webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.4); 
+	-moz-box-shadow: 0px 1px 6px rgba(23, 69, 88, .5);
+
+	/* rounded corners */
+	/*-webkit-border-radius: 12px;
+	-moz-border-radius: 7px; 
+	border-radius: 7px;
+
+	/* gradients */
+	/*background: -webkit-gradient(linear, left top, left bottom, 
+	color-stop(0%, #2e3141), color-stop(15%, #2e3141), color-stop(100%, #D7E9F5)); 
+	background: -moz-linear-gradient(top, white 0%, white 55%, #D5E4F3 130%); */
+}
+.dynamic_content{
+	text-align: center;
+}
+
+#dynamic_container{
+	margin: auto;
+}
+
+#dynamic_container2{
+	margin: auto;
+	width:100%;
+}
+#catego_block{
+}
+
+#filter_block{
+	text-align: center;
+	margin-top: 20px;
+
+}
+#cat_submit{
+	width:500px;
+}
+
+#big_button{
+	font-size: 50px;
+}
+
+input[type="submit"]:hover{
+	opacity: 0.5;
+	cursor: pointer;
+	/*border:1px solid blue;*/
+}
+
+label {
+	display:block;
+	border:solid 1px gray;
+	line-height:40px;
+	height:40px;
+	width: 250px;
+	border-radius:40px;
+	-webkit-font-smoothing: antialiased; 
+	margin-top:10px;
+	font-family:Arial,Helvetica,sans-serif;
+	color:gray;
+	text-align:center;
+}
+
+input[type=checkbox] {
+	display: none;
+
+}
+
+input[type=checkbox]:hover{
+	border:1px solid blue;
+	cursor: pointer;
+}
+
+input:checked + label {
+	border: solid 1px red;
+	color: #F00;
+}
+
+input:checked + label:before {
+	content: "\2713";
+}
+
+label:hover{
+	border:1px solid blue;
+	cursor: pointer;
+}
+
+#main_page_content {
+	width:100%;
+	margin: auto;
+	padding: 20px;
+	margin-top: 30px;
+	border-radius:40px;
+	-webkit-font-smoothing: antialiased; 
+}
+.ab_main_content{
+	border: 1px solid black;
+}
+
+#Searc_field{
+	display:none;
+}
+
+#searched_word{
+	max-width: 1000px;
+	overflow-x;scroll;
+}
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+

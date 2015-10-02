@@ -1,0 +1,18 @@
+
+//sanitizeUserInputNumber(string) xx
+//sanitizeUserInputString(string, code) xx
+//indent(s, k) xx
+//getAssociatedWords(category, word)
+//filterByLength(size, word_list) xx
+//filterByCharacters(character_string, word_list) xx
+
+
+//DataSource:
+	//def getListCategories(self):
+    //def getAdjectivesListForWord(self, word):
+    //def getVerbsListForWord(self, word):
+    //def getAdverbsListForWord(self, word):
+    //def getNounsListForWord(self, word):
+    //def getDefinitionsListForWord(self, word):
+    //def getSynonymsForWord(self, word):
+    //def getAllInformationForWord(self, word):
